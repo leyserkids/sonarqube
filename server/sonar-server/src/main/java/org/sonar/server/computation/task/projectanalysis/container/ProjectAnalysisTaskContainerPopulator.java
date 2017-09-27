@@ -116,7 +116,6 @@ import org.sonar.server.computation.task.projectanalysis.source.LastCommitVisito
 import org.sonar.server.computation.task.projectanalysis.source.SourceHashRepositoryImpl;
 import org.sonar.server.computation.task.projectanalysis.source.SourceLinesRepositoryImpl;
 import org.sonar.server.computation.task.projectanalysis.step.ReportComputationSteps;
-import org.sonar.server.computation.task.projectanalysis.webhook.WebhookPayloadFactoryImpl;
 import org.sonar.server.computation.task.projectanalysis.webhook.WebhookPostTask;
 import org.sonar.server.computation.task.step.ComputationStepExecutor;
 import org.sonar.server.computation.task.step.ComputationSteps;
@@ -272,7 +271,6 @@ public final class ProjectAnalysisTaskContainerPopulator implements ContainerPop
 
       // webhooks
       WebhookModule.class,
-      WebhookPayloadFactoryImpl.class,
       WebhookPostTask.class);
   }
 
