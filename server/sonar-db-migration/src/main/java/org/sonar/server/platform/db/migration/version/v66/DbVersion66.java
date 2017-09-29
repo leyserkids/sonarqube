@@ -42,6 +42,7 @@ public class DbVersion66 implements DbVersion {
       .add(1813, "Drop PR columns from project_branches", DropPrColumnsFromProjectBranches.class)
       .add(1814, "Purge table properties", PurgeTableProperties.class)
       .add(1815, "Add webhook_deliveries.analysis_uuid", AddAnalysisUuidToWebhookDeliveries.class)
+      .add(1816, "Create table ANALYSIS_PROPERTIES", CreateTableAnalysisProperties.class)
     ;
   }
 }
